@@ -12,6 +12,8 @@
             color: #333;
             margin: 0;
             padding: 0;
+            position: relative; /* Ensure the body is positioned relative for absolute positioning */
+            min-height: 100vh; /* Ensure the body takes up at least the full viewport height */
         }
         
         /* Navigation styles */
@@ -45,11 +47,17 @@
             height: auto; /* Maintains the image's aspect ratio */
             display: block; /* Removes any extra space below the image */
             margin: auto; /* Centers the image horizontally */
-            margin-top: 20px; /* Adds some top margin for spacing */
+            position: absolute; /* Position the image absolutely */
+            bottom: 20px; /* Distance from the bottom of the viewport */
+            left: 50%; /* Center horizontally */
+            transform: translateX(-50%); /* Adjust horizontally to center */
         }
     </style>
 </head>
 <body>
+    <h1>Home</h1>
+    <p>I currently live in beautiful Cambridge.</p>
+    
     <nav>
         <ul>
             <li><a href="home.html">Home</a></li>
@@ -58,12 +66,11 @@
             <!-- Add more links as needed -->
         </ul>
     </nav>
-    <h1>Home</h1>
-    <p>I currently live in beautiful Cambridge.</p>
-    
-    <img src="IMG_4665.jpg" alt="Description of the image">
     
     <!-- Additional content for your about page -->
+    
+    <!-- Image at the bottom -->
+    <img src="IMG_4665.jpg" alt="Description of the image">
     
 </body>
 </html>
