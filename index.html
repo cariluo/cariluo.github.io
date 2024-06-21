@@ -21,16 +21,20 @@
             text-align: left;
             display: flex;
             align-items: center;
+            flex-wrap: wrap; /* Allows wrapping for responsive design */
         }
         header img {
-            width: 50px; /* Adjust the size as needed */
+            width: 150px; /* Adjust the size as needed */
             height: auto;
-            margin: 0 10px;
+            margin: 0 20px 10px 0; /* Added margin to create spacing */
         }
         header h1 {
             margin: 0;
             display: flex;
             align-items: center;
+        }
+        header p {
+            margin-top: 10px; /* Added margin for spacing */
         }
         nav {
             background: darkred; /* Dark red background for the nav */
@@ -71,12 +75,11 @@
 </head>
 <body>
     <header>
-        <h1>
-            The
-            <img src="logo.png" alt="The Van Voorhis Group">
-            Group
-        </h1>
-        <p>Method Development and Applications for Electronic Structure Theory</p>
+        <img src="logo.png" alt="The Van Voorhis Group">
+        <div>
+            <h1>The Van Voorhis Group</h1>
+            <p>Method Development and Applications for Electronic Structure Theory</p>
+        </div>
     </header>
     <nav>
         <ul>
