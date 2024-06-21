@@ -3,58 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
+    <title>The Van Voorhis Group</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
             margin: 0;
             padding: 0;
         }
-        nav {
-            background-color: #8B0000; /* Use a darker red */
-            color: #fff;
-            padding: 10px 40px; /* Increase the left padding */
+        header, nav, section, footer {
+            padding: 20px;
+            margin: 10px auto;
+            max-width: 1000px;
+        }
+        header {
+            background: #f5f5f5;
+            text-align: center;
         }
         nav ul {
             list-style-type: none;
-            margin: 0;
             padding: 0;
-            text-align: left; /* Align the list items to the left */
         }
         nav ul li {
             display: inline;
             margin-right: 10px;
         }
         nav ul li a {
-            color: #fff;
             text-decoration: none;
-            padding: 5px 10px;
+            color: #007BFF;
         }
-        nav ul li a:hover {
-            background-color: #555;
+        .hero img {
+            width: 100%;
+            height: auto;
         }
-        .left-aligned-image {
-            float: left;
-            margin-right: 20px; /* Add some space to the right of the image */
+        section {
+            margin-top: 20px;
+        }
+        footer {
+            background: #f5f5f5;
+            text-align: center;
+            padding: 10px;
         }
     </style>
 </head>
 <body>
+    <header>
+        <h1>The Van Voorhis Group</h1>
+        <p>Method Development and Applications for Electronic Structure Theory</p>
+    </header>
     <nav>
         <ul>
-            <li><a href="home.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="research.html">Research</a></li>
-            <li><a href="group.html">Group Members</a></li>
-            <li><a href="pub.html">Publications</a></li>
+            <li><a href="members.html">Group Members</a></li>
+            <li><a href="publications.html">Publications</a></li>
         </ul>
     </nav>
-    <h1>Welcome</h1>
-    <img src="logo.jpg" alt="Description of Image" class="left-aligned-image">
-    <p>This is my first attempt at creating a website. I know it's not even close to functional yet, but maybe one day... This page was last edited 6/21/24</p>
-    
-    <!-- Additional content for your homepage -->
-    
+    <section class="hero">
+        <img src="group_photo.jpg" alt="The Van Voorhis Group">
+    </section>
+    <section>
+        <h2>About Us</h2>
+        <p>Our group focuses on developing new methods for electronic structure theory and applying these methods to real-world problems in chemistry and materials science.</p>
+    </section>
+    <section>
+        <h2>Research</h2>
+        <p>We are working on various projects including Bootstrap Embedding, DFT Embedding, and more. Our research aims to improve accuracy and efficiency in computational chemistry.</p>
+    </section>
+    <footer>
+        <p>&copy; 2024 The Van Voorhis Group. All rights reserved.</p>
+    </footer>
 </body>
 </html>
