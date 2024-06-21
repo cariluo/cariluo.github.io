@@ -72,9 +72,11 @@
             display: block; /* Ensures the image behaves like a block element */
         }
         .caption {
-            font-style: italic;
             font-size: 0.9em;
             text-align: center; /* Center the caption */
+        }
+        .caption .non-italic {
+            font-style: normal; /* Ensures non-italic for specific lines */
         }
         footer {
             background: #f5f5f5;
@@ -104,11 +106,8 @@
     </section>
     <div class="caption">
         <p>From left to right: Inkoo Kim, Leah Weisburn, Alexandra Raeber, Matthias Kick, Shaun Weatherly, Oinam Meitei, Alexa Alexiu, Kimberly Zhang, Minsik Cho, Troy Van Voorhis, Victor Bastidas, Ezra Alexander, Alex Byrne</p>
-        <p>&copy; 2024 The Van Voorhis Group at MIT. All rights reserved.</p>
-        <p> Accessibility and Login using Touchstone</p>
+        <p>&copy; 2024 <span class="non-italic">The Van Voorhis Group at <a href="https://web.mit.edu/" target="_blank">MIT</a></span>. All rights reserved.</p>
+        <p><a href="https://accessibility.mit.edu/" target="_blank">Accessibility</a> and Login using Touchstone</p>
     </div>
-    <footer>
-        <!-- Additional footer content if needed -->
-    </footer>
 </body>
 </html>
