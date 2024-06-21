@@ -26,7 +26,7 @@
         header img {
             width: 150px; /* Adjust the size as needed */
             height: auto;
-            margin: 0 20px 10px 0; /* Added margin to create spacing */
+            margin-right: 20px; /* Added margin between logo and caption */
         }
         header h1 {
             margin: 0;
@@ -34,12 +34,14 @@
             align-items: center;
         }
         header p {
-            margin-top: 10px; /* Added margin for spacing */
+            margin-top: 5px; /* Added margin for spacing between header content and caption */
+            margin-bottom: 0; /* Removed bottom margin to reduce space */
         }
         nav {
             background: darkred; /* Dark red background for the nav */
             text-align: center;
             padding: 10px 0;
+            margin-top: -10px; /* Adjusted to overlap with header */
         }
         nav ul {
             list-style-type: none;
@@ -59,9 +61,17 @@
         nav ul li a:hover {
             background: #ff6347; /* Optional: change background color on hover */
         }
+        .hero {
+            margin-bottom: 20px; /* Added margin to create space below the image */
+        }
         .hero img {
             width: 100%;
             height: auto;
+            display: block; /* Ensures the image behaves like a block element */
+        }
+        .caption {
+            font-style: italic;
+            font-size: 0.9em;
         }
         section {
             margin-top: 20px;
@@ -80,6 +90,7 @@
             <h1>The Van Voorhis Group</h1>
             <p>Method Development and Applications for Electronic Structure Theory</p>
         </div>
+        <p class="caption">From left to right: Inkoo Kim, Leah Weisburn, Alexandra Raeber, Matthias Kick, Shaun Weatherly, Oinam Meitei, Alexa Alexiu, Kimberly Zhang, Minsik Cho, Troy Van Voorhis, Victor Bastidas, Ezra Alexander, Alex Byrne</p>
     </header>
     <nav>
         <ul>
