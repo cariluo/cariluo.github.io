@@ -17,7 +17,6 @@
             margin: 0 auto; /* Changed margin to 0 to remove top and bottom margin */
             max-width: 1000px;
         }
-
         /* Header styles */
         header {
             background: white; /* Changed background to white */
@@ -40,7 +39,6 @@
             margin-top: 5px; /* Added margin for spacing between header content and caption */
             margin-bottom: 0; /* Removed bottom margin to reduce space */
         }
-
         /* Navigation styles */
         nav {
             background: darkred; /* Dark red background for the nav */
@@ -67,7 +65,6 @@
         nav ul li a:hover {
             background: #ff6347; /* Optional: change background color on hover */
         }
-
         /* Section styles */
         section {
             display: flex;
@@ -83,7 +80,6 @@
             margin-left: 20px; /* Add some margin to the left for spacing */
             float: right; /* Float image to the right */
         }
-
         /* Caption styles */
         .caption {
             font-size: 0.9em;
@@ -92,13 +88,27 @@
         .caption .non-italic {
             font-style: normal; /* Ensures non-italic for specific lines */
         }
-
         /* Footer styles */
         footer {
             background: #f5f5f5;
             text-align: center;
             padding: 10px;
         }
+        section img[src="g3597.png"],
+        section img[src="piscf.png"] {
+            width: 35%; /* Make images take up 35% of the section width */
+            height: auto;
+            margin-left: 20px; /* Add some margin to the left for spacing */
+            float: right; /* Float image to the right */
+            margin-top: 40px; /* Add margin to the top to move images down */
+}
+        section img[src="bootstrap_pic.png"] {
+            width: 35%; /* Make images take up 35% of the section width */
+            height: auto;
+            margin-left: 20px; /* Add some margin to the left for spacing */
+            float: right; /* Float image to the right */
+            margin-top: 120px; /* Add margin to the top to move images down */
+}
 
         /* Member name styles */
         .member .info .name {
@@ -107,57 +117,24 @@
     </style>
 </head>
 <body>
-    <header>
-        <img src="logo.png" alt="The Van Voorhis Group">
-        <div>
-            <h1>The Van Voorhis Group</h1>
-            <p>Method Development and Applications for Electronic Structure Theory</p>
-        </div>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="research.html">Research</a></li>
-            <li><a href="members.html">Group Members</a></li>
-            <li><a href="publications.html">Publications</a></li>
-        </ul>
-    </nav>
-
-    <!-- Principal Investigator Section -->
-    <div class="section">
-        <h2>Principal Investigator</h2>
-        <div class="member">
-            <img src="troy.jpeg" alt="Troy Van Voorhis">
-            <div class="info">
-                <div class="name">Troy Van Voorhis</div>
-                <div class="position">Haslam and Dewey Professor of Chemistry</div>
-                <div class="contact">
-                    <div>Email: <a href="mailto:tvan@mit.edu">tvan@mit.edu</a></div>
-                    <div>Office: 6-211</div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Post Docs Section -->
-    <div class="section">
-        <h2>Post Docs</h2>
-        <div class="member">
+@@ -156,9 +146,7 @@ <h2>Post Docs</h2>
             <img src="ali.jpg" alt="Alexandra Raeber">
             <div class="info">
                 <div class="name">Alexandra Raeber</div>
+                <div class="position">PhD, Theoretical Chemistry, University of Chicago, 2020<div>
+                <div></div>MSc, Theoretical Chemistry, University of Chicago, 2015<div>
+                <div></div>AB, Chemistry, Bryn Mawr College, 2013</div>
                 <div class="position">PhD, Theoretical Chemistry, University of Chicago, 2020</div>
                 <div class="contact">
                     <div>Email: <a href="mailto:araeber@mit.edu">araeber@mit.edu</a></div>
                     <div>Office: 6-232</div>
-                </div>
-            </div>
-        </div>
-
-        <div class="member">
+@@ -170,27 +158,25 @@ <h2>Post Docs</h2>
             <img src="oinam.jpg" alt="Oinam Romesh Meitei">
             <div class="info">
                 <div class="name">Oinam Romesh Meitei</div>
+                <div class="position">PhD, Theoretical Chemistry, University of Erlangen-Nuremberg, 2018<div>
+                <div></div>MSc, Chemistry, Visvesvaraya National Institute of Technology, 2015<div>
+                <div></div>BSc, Chemistry, Madras Christian College, 2013</div>
                 <div class="position">PhD, Theoretical Chemistry, University of Erlangen-Nuremberg, 2018</div>
                 <div class="contact">
                     <div>Email: <a href="mailto:oimeitei@mit.edu">oimeitei@mit.edu</a></div>
@@ -170,6 +147,8 @@
             <img src="beck.jpg" alt="Beck Hanscam">
             <div class="info">
                 <div class="name">Beck Hanscam</div>
+                <div class="position">PhD, Chemistry, University of California—Berkeley, 2023<div>
+                <div></div>BS, Mathematics and Chemistry, University of Puget Sound, 2016<div>
                 <div class="position">PhD, Chemistry, University of California—Berkeley, 2023</div>
                 <div class="contact">
                     <div>Email: <a href="mailto:bhanscam@mit.edu">bhanscam@mit.edu</a></div>
@@ -177,33 +156,34 @@
                 </div>
             </div>
         </div>
+        <!-- Add more Post Docs as needed -->
     </div>
 
     <!-- Graduate Students Section -->
-    <div class="section">
-        <h2>Graduate Students</h2>
-        <div class="member">
-            <img src="ezra.jpg" alt="Ezra Alexander">
+@@ -201,15 +187,14 @@ <h2>Graduate Students</h2>
             <div class="info">
                 <div class="name">Ezra Alexander</div>
                 <div class="position">Graduate Student</div>
+                <div>MIT Dean of Science Fellow<div>
+                <div>BA, Mathematics and Chemistry, Amherst College, 2020<div>
                 <div class="contact">
+                    <div>Email: <a href="mailto:ezraa@mit.edu">rajata@mit.edu</a></div>
                     <div>Email: <a href="mailto:rajata@mit.edu">rajata@mit.edu</a></div>
                     <div>Office: 6-234B</div>
                 </div>
             </div>
         </div>
+           <div class="member">
 
         <div class="member">
             <img src="leah.jpg" alt="Leah Weisburn">
             <div class="info">
                 <div class="name">Leah Weisburn</div>
-                <div class="position">BA, Mathematics and Chemistry, Colgate University, 2020</div>
-                <div class="contact">
-                    <div>Email: <a href="mailto:lweisbur@mit.edu">lweisbur@mit.edu</a></div>
+@@ -219,225 +204,110 @@ <h2>Graduate Students</h2>
                     <div>Office: 6-234A</div>
                 </div>
             </div>
+            <div class="member">
         </div>
 
         <div class="member">
@@ -211,11 +191,13 @@
             <div class="info">
                 <div class="name">Alex Byrne</div>
                 <div class="position">NSF Graduate Research Fellow</div>
+                <div>BS, Chemistry, Temple University, 2021<div>
                 <div class="contact">
                     <div>Email: <a href="mailto:lxbyrne@mit.edu">lxbyrne@mit.edu</a></div>
                     <div>Office: 6-234</div>
                 </div>
             </div>
+            <div class="member">
         </div>
 
         <div class="member">
@@ -223,43 +205,78 @@
             <div class="info">
                 <div class="name">Kimberly Zhang</div>
                 <div class="position">NSF Graduate Research Fellow</div>
+                <div>Ida M. Green Fellow<div>
+                <div>B.S. Mathematics and Chemistry, University of California, Irvine, 2021<div>
                 <div class="contact">
                     <div>Email: <a href="mailto:kimzhang@mit.edu">kimzhang@mit.edu</a></div>
                     <div>Office: 6-234</div>
                 </div>
             </div>
+            <div class="member">
         </div>
 
         <div class="member">
             <img src="minsik.jpg" alt="Minsik Cho">
             <div class="info">
                 <div class="name">Minsik Cho</div>
+                <div class="position">Robert T. Haslam (1911) MIT Presidential Fellow</div>
+                <div>Kwanjeong Fellow<div>
+                <div>Sc. B., Chemical Physics, Brown University, 2022<div>
                 <div class="position">Robert T. Haslam Fellow</div>
                 <div class="contact">
+                    <div>Email: <a href="mailto:minsik@mit.edu">minsik@mit.edu</a></div>
+                </div>
+            </div>
+            <div class="member">
+            <img src="alexa.jpg" alt="Alexandra Alexiu">
+            <div class="info">
+                <div class="name">Alexandra Alexiu</div>
+                <div class="position">MSci, Chemistry, University of Cambridge</div>
+                <div>BA, Natural Sciences (Chemistry), University of Cambridge<div>
+                <div class="contact">
+                    <div>Email: <a href="mailto:alexiu@mit.edu">alexiu@mit.edu</a></div>
                     <div>Email: <a href="mailto:mincho@mit.edu">mincho@mit.edu</a></div>
                     <div>Office: 6-234</div>
                 </div>
             </div>
+            <div class="member">
+            <img src="shaun.jpg" alt="Shaun Weatherly">
         </div>
 
         <div class="member">
             <img src="tushar.jpg" alt="Tushar Narayan">
             <div class="info">
+                <div class="name">Shaun Weatherly</div>
                 <div class="name">Tushar Narayan</div>
                 <div class="position">NSF Graduate Research Fellow</div>
+                <div>Vice Chancellor's Inclusive Excellence Fellow<div>
+                <div>B.S., Chemistry and Biology, University of Redlands, 2022<div>
                 <div class="contact">
+                    <div>Email: <a href="mailto:shaunrw@mit.edu">shaunrw@mit.edu</a></div>
                     <div>Email: <a href="mailto:tushar@mit.edu">tushar@mit.edu</a></div>
                     <div>Office: 6-234</div>
                 </div>
             </div>
+        <!-- Add more Graduate Students as needed -->
+    </div>
         </div>
 
+    <!-- Visiting Scientists Section -->
+    <div class="section">
+        <h2>Visiting Scientists</h2>
         <div class="member">
+            <img src="victor.jpg" alt="Victor Bastidas">
             <img src="bering.jpg" alt="Bering Woodward">
             <div class="info">
+                <div class="name">Victor Bastidas</div>
+                <div class="position">PhD, Theoretical Quantum Physics, Technical University of Berlin, 2013</div>
+                <div>MSc, Physics, Universidad del Valle Colombia, 2009<div>
+                <div>BSc, Physics, Universidad del Valle Colombia, 2006<div>
                 <div class="name">Bering Woodward</div>
                 <div class="position">Graduate Student</div>
                 <div class="contact">
+                    <div>Email: <a href="mailto:victor83@mit.edu">victor83@mit.edu</a></div>
+                    <div>Office: 6-228<div>
                     <div>Email: <a href="mailto:bering@mit.edu">bering@mit.edu</a></div>
                     <div>Office: 6-234</div>
                 </div>
@@ -267,12 +284,16 @@
         </div>
     </div>
 
+    <!-- Undergraduate Students Section -->
     <!-- Former Members Section -->
     <div class="section">
+        <h2>Undergraduate Students</h2>
         <h2>Former Members</h2>
         <div class="member">
+            <img src="yongao.jpg" alt="Yongao Hu">
             <img src="zeng.jpeg" alt="Zeng Qinglu">
             <div class="info">
+                <div class="name">Yongao Hu</div>
                 <div class="name">Zeng Qinglu</div>
                 <div class="position">PhD, Chemistry, University of Illinois, 2018</div>
                 <div class="contact">
@@ -283,8 +304,10 @@
         </div>
 
         <div class="member">
+            <img src="temujin.jpg" alt="Temujin Orkhon">
             <img src="flo.jpg" alt="Florian Bernard">
             <div class="info">
+                <div class="name">Temujin Orkhon</div>
                 <div class="name">Florian Bernard</div>
                 <div class="position">PhD, Chemistry, University of Toulouse, 2017</div>
                 <div class="contact">
@@ -293,8 +316,130 @@
                 </div>
             </div>
         </div>
+        <!-- Add more Undergraduate Students as needed -->
+    </div>
 
+    <!-- Former Members Section -->
+<div class="section">
+    <h2>Former Members</h2>
+
+    <!-- Post Docs subsection -->
+    <div class="subsection">
+        <h3>Post Docs</h3>
         <div class="member">
+            <div class="name">Matthias Kick</div>
+            <div class="position">Group Leader, Fritz-Haber Institute of the Max Planck Society</div>
+        </div>
+        <div class="member">
+            <div class="name">Jacqueline Tan</div>
+            <div class="position">Scientist, Institute of High Performance Computing (IHPC)</div>
+        </div>
+        <div class="member">
+            <div class="name">Tamar Goldzak</div>
+            <div class="position">Assistant Professor, Bar Ilan University</div>
+        </div>
+        <div class="member">
+            <div class="name">Zhou Lin</div>
+            <div class="position">Assistant Professor, University of Massachusetts Amherst</div>
+        </div>
+        <div class="member">
+            <div class="name">James Shepherd</div>
+            <div class="position">Assistant Professor, The University of Iowa</div>
+        </div>
+        <div class="member">
+            <div class="name">Piotr de Silva</div>
+            <div class="position">Assistant Professor, Technical University of Denmark (DTU)</div>
+        </div>
+        <div class="member">
+            <div class="name">Valerie Vaissier Welborn</div>
+            <div class="position">Assistant Professor, Virginia Tech</div>
+        </div>
+        <div class="member">
+            <div class="name">Helen van Aggelen</div>
+            <div class="position">Senior Research Scientist, Philips Research</div>
+        </div>
+        <div class="member">
+            <div class="name">Takashi Tsuchimochi</div>
+            <div class="position">Research Assistant Professor, Kobe University</div>
+        </div>
+        <div class="member">
+            <div class="name">Shuhao Wen</div>
+            <div class="position">Cofounder, XtalPI Inc</div>
+        </div>
+        <div class="member">
+            <div class="name">David McMahon</div>
+        </div>
+        <div class="member">
+            <div class="name">Jiahao Chen</div>
+            <div class="position">Research Scientist, MIT Computer Science and Artificial Intelligence Laboratory</div>
+        </div>
+        <div class="member">
+            <div class="name">Indranil Rudra</div>
+            <div class="position">Research Chemist, Shell Technology Center</div>
+        </div>
+        <div class="member">
+            <div class="name">Qin Wu</div>
+            <div class="position">Staff Scientist, Brookhaven National Lab</div>
+        </div>
+        <div class="member">
+            <div class="name">Oleg Vydrov</div>
+        </div>
+        <div class="member">
+            <div class="name">Sina Yeganeh</div>
+            <div class="position">EM Portfolio Manager, Bracebridge Capital</div>
+        </div>
+    </div>
+
+    <!-- Graduate Students subsection -->
+    <div class="subsection">
+        <h3>Graduate Students</h3>
+        <!-- List former Graduate Students -->
+    </div>
+
+    <!-- Visiting Scientists subsection -->
+       <div class="subsection">
+        <h3>Visiting Scientists</h3>
+        <div class="member">
+            <div class="name">Inkoo Kim</div>
+            <div class="position">Samsung Electronics</div>
+        </div>
+    </div>
+
+    <!-- Undergraduate Students subsection -->
+    <div class="subsection">
+        <h3>Undergraduate Students</h3>
+        <div class="member">
+            <div class="name">Anton Morgunov</div>
+        </div>
+        <div class="member">
+            <div class="name">Shicheng Hu</div>
+        </div>
+        <div class="member">
+            <div class="name">Ben Chien</div>
+        </div>
+        <div class="member">
+            <div class="name">Lin Rogers</div>
+        </div>
+        <div class="member">
+            <div class="name">Anton Ni</div>
+        </div>
+        <div class="member">
+            <div class="name">Kelly Chen</div>
+        </div>
+        <div class="member">
+            <div class="name">Hikari Iwasaki</div>
+        </div>
+        <div class="member">
+            <div class="name">Diptarka Hait</div>
+        </div>
+        <div class="member">
+            <div class="name">Anubhav Sinha</div>
+        </div>
+        <div class="member">
+            <div class="name">David Hocker</div>
+        </div>
+        <div class="member">
+            <div class="name">Carter Lin</div>
             <img src="ajit.jpeg" alt="Ajit Ramachandran">
             <div class="info">
                 <div class="name">Ajit Ramachandran</div>
@@ -306,7 +451,9 @@
             </div>
         </div>
     </div>
+</div>
 
+<footer>
     <footer>
         <p>&copy; 2024 <span class="non-italic">The Van Voorhis Group at <a href="https://web.mit.edu/" target="_blank">MIT</a></span>. All rights reserved.</p>
         <p><a href="https://accessibility.mit.edu/" target="_blank">Accessibility</a> and <a href="https://vanvoorhisgroup.mit.edu/Shibboleth.sso/Login?target=https%3A%2F%2Fvanvoorhisgroup.mit.edu%2F%3Fq%3Dshib_login%2Fnode%2F1" target="_blank">Touchstone Login</a></p>
