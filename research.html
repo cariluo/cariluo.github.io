@@ -3,23 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Research | The Van Voorhis Group</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>The Van Voorhis Group</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header, nav, section, footer {
+            padding: 20px;
+            margin: 0 auto; /* Changed margin to 0 to remove top and bottom margin */
+            max-width: 1000px;
+        }
+        header {
+            background: #f5f5f5;
+            text-align: left;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap; /* Allows wrapping for responsive design */
+        }
+        header img {
+            width: 150px; /* Adjust the size as needed */
+            height: auto;
+            margin-right: 20px; /* Added margin between logo and caption */
+        }
+        header h1 {
+            margin: 0;
+            display: flex;
+            align-items: center;
+        }
+        header p {
+            margin-top: 5px; /* Added margin for spacing between header content and caption */
+            margin-bottom: 0; /* Removed bottom margin to reduce space */
+        }
+        nav {
+            background: darkred; /* Dark red background for the nav */
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 0; /* Removed margin-top to align with header */
+            margin-bottom: 0; /* Removed margin-bottom */
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white; /* White text color for the tabs */
+            padding: 10px;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            background: #ff6347; /* Optional: change background color on hover */
+        }
+        .hero {
+            margin-top: 0; /* Removed margin-top to align with nav */
+            padding-top: 0; /* Removed padding-top */
+        }
+        .hero img {
+            width: 100%;
+            height: auto;
+            display: block; /* Ensures the image behaves like a block element */
+        }
+        .caption {
+            font-size: 0.9em;
+            text-align: center; /* Center the caption */
+        }
+        .caption .non-italic {
+            font-style: normal; /* Ensures non-italic for specific lines */
+        }
+        footer {
+            background: #f5f5f5;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="research.html">Research</a></li>
-                <li><a href="group.html">Group Members</a></li>
-                <li><a href="publications.html">Publications</a></li>
-            </ul>
-        </nav>
+        <img src="logo.png" alt="The Van Voorhis Group">
+        <div>
+            <h1>The Van Voorhis Group</h1>
+            <p>Method Development and Applications for Electronic Structure Theory</p>
+        </div>
     </header>
-    <main>
-        <h1>The Van Voorhis Group</h1>
-        <h2>Method Development and Applications for Electronic Structure Theory</h2>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="members.html">Group Members</a></li>
+            <li><a href="publications.html">Publications</a></li>
+        </ul>
+    </nav>
 
         <section>
             <h3>Bootstrap Embedding</h3>
