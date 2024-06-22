@@ -83,6 +83,19 @@
             text-align: center;
             padding: 10px;
         }
+        section {
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+        section img {
+            width: 200px; /* Adjust the width as needed */
+            height: auto;
+            margin-left: 20px;
+        }
+        section .content {
+            flex: 1;
+        }
     </style>
 </head>
 <body>
@@ -103,38 +116,54 @@
     </nav>
 
     <section>
-        <h3>Bootstrap Embedding</h3>
-        <p>Electron correlation is intrinsically local and this can be exploited by a variety of embedding methods. These embedding methods partition the system into small fragments that can each be manageably treated with high-accuracy theories, and use a cheaper theory for the interactions of the fragment with its surrounding bath. The largest errors lie at fragment edges where fragment-bath interactions are most strong. To overcome this, we have developed a fragment embedding scheme where the system is partitioned into overlapping fragments, each with an accurately described center and inaccurately described bath. We constrain the edge site of one fragment to match the same site on an overlapping fragment, where that site is in that fragment’s center. In this way, the calculation pulls itself up by its own bootstraps, giving this method the name Bootstrap Embedding.</p>
-        <p>Bootstrap Embedding has seen initial success in our group for lattice models and simple molecular systems. We have extended the success of Bootstrap Embedding to molecules where fragment centers can naturally be defined as atoms and the fragment edges as atoms bonded to the center. Current work in our group focuses on improving and applying Bootstrap Embedding in the context of real molecules in large basis sets.</p>
+        <div class="content">
+            <h3>Bootstrap Embedding</h3>
+            <p>Electron correlation is intrinsically local and this can be exploited by a variety of embedding methods. These embedding methods partition the system into small fragments that can each be manageably treated with high-accuracy theories, and use a cheaper theory for the interactions of the fragment with its surrounding bath. The largest errors lie at fragment edges where fragment-bath interactions are most strong. To overcome this, we have developed a fragment embedding scheme where the system is partitioned into overlapping fragments, each with an accurately described center and inaccurately described bath. We constrain the edge site of one fragment to match the same site on an overlapping fragment, where that site is in that fragment’s center. In this way, the calculation pulls itself up by its own bootstraps, giving this method the name Bootstrap Embedding.</p>
+            <p>Bootstrap Embedding has seen initial success in our group for lattice models and simple molecular systems. We have extended the success of Bootstrap Embedding to molecules where fragment centers can naturally be defined as atoms and the fragment edges as atoms bonded to the center. Current work in our group focuses on improving and applying Bootstrap Embedding in the context of real molecules in large basis sets.</p>
+        </div>
+        <img src="bootstrap_embedding.jpg" alt="Bootstrap Embedding">
     </section>
 
     <section>
-        <h3>DFT Embedding: Many Pair Expansion</h3>
-        <p>Density functional theory has become the workhorse of quantum mechanical simulations in chemistry and materials science. However, most local and semi-local density functionals suffer from delocalization errors and cannot describe strongly correlated systems or dispersion interactions very well. As a result, the applications of DFT rely heavily on picking functionals for specific problems and careful benchmarking. In order to alleviate this problem, we have developed a wavefunction-in-DFT embedding method called Many Pair Expansion (MPE). It is a new density functional hierarchy that systematically corrects any deficiency of an approximate functional to finally converge to the exact ground-state energy. The core idea is to partition the electron density into localized electron pairs and numerically compute the exact energy for the fragment densities built from these electron pairs. The exact energies of fragment densities are used to improve the approximate total DFT energy. We have implemented this method for lattice Hamiltonians such as 1D and 2D Hubbard, Peierls-Hubbard and PPP models and proved it is efficient in describing strong correlations and dispersion interactions. MPE is also extended to molecular systems and shown to provide promising results. We are now working on more thorough tests on MPE using different starting functionals and making a faster implementation. We also hope to use MPE as a tool to design better density functionals in the future.</p>
+        <div class="content">
+            <h3>DFT Embedding: Many Pair Expansion</h3>
+            <p>Density functional theory has become the workhorse of quantum mechanical simulations in chemistry and materials science. However, most local and semi-local density functionals suffer from delocalization errors and cannot describe strongly correlated systems or dispersion interactions very well. As a result, the applications of DFT rely heavily on picking functionals for specific problems and careful benchmarking. In order to alleviate this problem, we have developed a wavefunction-in-DFT embedding method called Many Pair Expansion (MPE). It is a new density functional hierarchy that systematically corrects any deficiency of an approximate functional to finally converge to the exact ground-state energy. The core idea is to partition the electron density into localized electron pairs and numerically compute the exact energy for the fragment densities built from these electron pairs. The exact energies of fragment densities are used to improve the approximate total DFT energy. We have implemented this method for lattice Hamiltonians such as 1D and 2D Hubbard, Peierls-Hubbard and PPP models and proved it is efficient in describing strong correlations and dispersion interactions. MPE is also extended to molecular systems and shown to provide promising results. We are now working on more thorough tests on MPE using different starting functionals and making a faster implementation. We also hope to use MPE as a tool to design better density functionals in the future.</p>
+        </div>
+        <img src="dft_embedding.jpg" alt="DFT Embedding">
     </section>
 
     <section>
-        <h3>σ-SCF</h3>
-        <p>In quantum chemistry, people find ground state solutions to the electronic Schrodinger equation by practicing the “golden rule” of lowest energy. The variational principle tells us that the energy of an approximate wave function is always higher than that of the exact ground state. Based on this theorem, people have come up with a large number of approaches to parameterizing a wave function and turning the solution of Schrodinger equation to a much easier energy minimization problem.</p>
-        <p>When it comes to excited states, however, the golden rule does not apply any more. Unlike ground states, excited states are saddle points instead of minima in energy landscape and thus hardly located by conventional minimization schemes. One of the key observations we have made is that energy variance, unlike energy, is at minimum for every state. As a consequence, the lowest energy principle should be replaced by the lowest variance principle.</p>
-        <p>This new scheme, however, faces an immediate challenge: if every state is a (local) minimum, how can we differentiate them? One can imagine that, without any guidance, this new method will generate solutions by luck. This issue has brought us to our second observation that using a direct energy-targeting functional gives us a good guess for an excited state near a chosen energy, which can then be used in variance minimization. We hence name this two-step method σ-SCF since people usually denote energy variance using σ².</p>
+        <div class="content">
+            <h3>σ-SCF</h3>
+            <p>In quantum chemistry, people find ground state solutions to the electronic Schrodinger equation by practicing the “golden rule” of lowest energy. The variational principle tells us that the energy of an approximate wave function is always higher than that of the exact ground state. Based on this theorem, people have come up with a large number of approaches to parameterizing a wave function and turning the solution of Schrodinger equation to a much easier energy minimization problem.</p>
+            <p>When it comes to excited states, however, the golden rule does not apply any more. Unlike ground states, excited states are saddle points instead of minima in energy landscape and thus hardly located by conventional minimization schemes. One of the key observations we have made is that energy variance, unlike energy, is at minimum for every state. As a consequence, the lowest energy principle should be replaced by the lowest variance principle.</p>
+            <p>This new scheme, however, faces an immediate challenge: if every state is a (local) minimum, how can we differentiate them? One can imagine that, without any guidance, this new method will generate solutions by luck. This issue has brought us to our second observation that using a direct energy-targeting functional gives us a good guess for an excited state near a chosen energy, which can then be used in variance minimization. We hence name this two-step method σ-SCF since people usually denote energy variance using σ².</p>
+        </div>
+        <img src="sigma_scf.jpg" alt="σ-SCF">
     </section>
 
     <section>
-        <h3>Mean Field Steady State Kinetics</h3>
-        <p>Spatial disorder is essential in describing the kinetics of many systems, from chemical reactions to excitons moving in organic semiconducting devices. The primary theoretical tool for studying systems with spatial disorder is Kinetic Monte Carlo, but this is often prohibitively expensive. We have developed a new method, called the Mean Field Steady State method, which allows for the computation of steady state populations in systems with a distribution of rate constants at a fraction of the cost. We accomplish this by making the mean field approximation, speeding up the calculation, but solving the model self-consistently to incorporate some effects of the disorder. We are currently using this method to study external quantum efficiency roll-off in organic light emitting diodes (OLEDs).</p>
+        <div class="content">
+            <h3>Mean Field Steady State Kinetics</h3>
+            <p>Spatial disorder is essential in describing the kinetics of many systems, from chemical reactions to excitons moving in organic semiconducting devices. The primary theoretical tool for studying systems with spatial disorder is Kinetic Monte Carlo, but this is often prohibitively expensive. We have developed a new method, called the Mean Field Steady State method, which allows for the computation of steady state populations in systems with a distribution of rate constants at a fraction of the cost. We accomplish this by making the mean field approximation, speeding up the calculation, but solving the model self-consistently to incorporate some effects of the disorder. We are currently using this method to study external quantum efficiency roll-off in organic light emitting diodes (OLEDs).</p>
+        </div>
+        <img src="steady_state_kinetics.jpg" alt="Mean Field Steady State Kinetics">
     </section>
 
     <section>
-        <h3>Applications</h3>
-        <p>We also pursue many projects focused on the applications of electronic structure theory, often in collaboration with experimental groups. Some areas we are interested in include:</p>
-        <ul>
-            <li>Catalysis</li>
-            <li>Organic semiconductors (OLEDs, OPVs)</li>
-            <li>Quantum dots</li>
-            <li>Umbrella effects</li>
-        </ul>
+        <div class="content">
+            <h3>Applications</h3>
+            <p>We also pursue many projects focused on the applications of electronic structure theory, often in collaboration with experimental groups. Some areas we are interested in include:</p>
+            <ul>
+                <li>Catalysis</li>
+                <li>Organic semiconductors (OLEDs, OPVs)</li>
+                <li>Quantum dots</li>
+                <li>Umbrella effects</li>
+            </ul>
+        </div>
+        <img src="applications.jpg" alt="Applications">
     </section>
+
     <footer>
         <p>&copy; 2024 The Van Voorhis Group | <a href="https://accessibility.mit.edu">Accessibility</a></p>
     </footer>
