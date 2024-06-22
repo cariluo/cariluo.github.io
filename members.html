@@ -66,28 +66,34 @@
             background: #ff6347; /* Optional: change background color on hover */
         }
         /* Section styles */
-        section {
-            display: flex;
-            align-items: flex-start; /* Align content at the top */
-            margin-bottom: 40px; /* Add margin between sections */
-        }
-        section .content {
-            flex: 1; /* Allow content to grow */
-        }
-        section img {
-            width: 35%; /* Make images take up 35% of the section width */
-            height: auto;
-            margin-left: 20px; /* Add some margin to the left for spacing */
-            float: right; /* Float image to the right */
-        }
-        /* Caption styles */
-        .caption {
-            font-size: 0.9em;
-            text-align: center; /* Center the caption */
-        }
-        .caption .non-italic {
-            font-style: normal; /* Ensures non-italic for specific lines */
-        }
+section {
+    display: flex;
+    align-items: flex-start; /* Align content at the top */
+    justify-content: flex-start; /* Align content to the left */
+    margin-bottom: 40px; /* Add margin between sections */
+}
+
+section .content {
+    flex: 1; /* Allow content to grow */
+}
+
+section img {
+    width: 35%; /* Make images take up 35% of the section width */
+    height: auto;
+    margin-left: 20px; /* Add some margin to the left for spacing */
+    /* Remove float: right; */
+}
+
+/* Caption styles */
+.caption {
+    font-size: 0.9em;
+    text-align: center; /* Center the caption */
+}
+
+.caption .non-italic {
+    font-style: normal; /* Ensures non-italic for specific lines */
+}
+
         /* Footer styles */
         footer {
             background: #f5f5f5;
