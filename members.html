@@ -99,6 +99,20 @@
             text-align: center;
             padding: 10px;
         }
+        section {
+            display: flex;
+            overflow-x: auto; /* Enable horizontal scrolling if needed */
+            gap: 15px; /* Adjust as needed for spacing between members */
+        }
+
+        .member {
+            flex: 0 0 auto;
+            width: 400px; /* Adjust the width as needed */
+            padding: 15px;
+            border: 1px solid #ccc; /* Optional: Add border for visual separation */
+            box-sizing: border-box; /* Ensure padding is included in the width */
+         }
+
     </style>
 </head>
 <body>
@@ -133,8 +147,8 @@
         </div>
     </section>
     <!-- Post Docs Section -->
-<section style="display: flex; flex-wrap: wrap;">
-    <div class="member" style="flex: 0 0 auto; width: 33%; padding: 0 15px;">
+<section style="display: flex; overflow-x: auto;">
+    <div class="member" style="flex: 0 0 auto; width: 400px; padding: 0 15px;">
         <img src="ali.jpg" alt="Alexandra Raeber">
         <div class="info">
             <div class="name">Alexandra Raeber</div>
@@ -147,7 +161,7 @@
         </div>
     </div>
 
-    <div class="member" style="flex: 0 0 auto; width: 33%; padding: 0 15px;">
+    <div class="member" style="flex: 0 0 auto; width: 400px; padding: 0 15px;">
         <img src="oinam.jpg" alt="Oinam Romesh Meitei">
         <div class="info">
             <div class="name">Oinam Romesh Meitei</div>
@@ -160,7 +174,7 @@
         </div>
     </div>
 
-    <div class="member" style="flex: 0 0 auto; width: 33%; padding: 0 15px;">
+    <div class="member" style="flex: 0 0 auto; width: 400px; padding: 0 15px;">
         <img src="beck.jpg" alt="Beck Hanscam">
         <div class="info">
             <div class="name">Beck Hanscam</div>
