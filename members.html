@@ -3,31 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Van Voorhis Group Members</title>
+    <title>The Van Voorhis Group</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
     <style>
-        /* Example CSS for styling */
+        /* General styles */
         body {
             font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 20px;
+            margin: 0;
+            padding: 0;
         }
-        .member {
-            margin-bottom: 20px;
-            border-bottom: 1px solid #ccc;
-            padding-bottom: 20px;
+        header, nav, section, footer {
+            padding: 20px;
+            margin: 0 auto; /* Changed margin to 0 to remove top and bottom margin */
+            max-width: 1000px;
         }
-        .name {
+
+        /* Header styles */
+        header {
+            background: white; /* Changed background to white */
+            text-align: left;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap; /* Allows wrapping for responsive design */
+        }
+        header img {
+            width: 150px; /* Adjust the size as needed */
+            height: auto;
+            margin-right: 20px; /* Added margin between logo and caption */
+        }
+        header h1 {
+            margin: 0;
+            display: flex;
+            align-items: center;
+        }
+        header p {
+            margin-top: 5px; /* Added margin for spacing between header content and caption */
+            margin-bottom: 0; /* Removed bottom margin to reduce space */
+        }
+
+        /* Navigation styles */
+        nav {
+            background: darkred; /* Dark red background for the nav */
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 0; /* Removed margin-top to align with header */
+            margin-bottom: 0; /* Removed margin-bottom */
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white; /* White text color for the tabs */
+            padding: 10px;
             font-weight: bold;
-            font-size: 1.2em;
         }
-        .position {
-            color: #666;
+        nav ul li a:hover {
+            background: #ff6347; /* Optional: change background color on hover */
         }
-        .email {
-            color: #007bff;
+
+        /* Section styles */
+        section {
+            display: flex;
+            align-items: flex-start; /* Align content at the top */
+            margin-bottom: 40px; /* Add margin between sections */
         }
+        section .content {
+            flex: 1; /* Allow content to grow */
+        }
+        section img {
+            width: 35%; /* Make images take up 35% of the section width */
+            height: auto;
+            margin-left: 20px; /* Add some margin to the left for spacing */
+            float: right; /* Float image to the right */
+        }
+
+        /* Caption styles */
+        .caption {
+            font-size: 0.9em;
+            text-align: center; /* Center the caption */
+        }
+        .caption .non-italic {
+            font-style: normal; /* Ensures non-italic for specific lines */
+        }
+
+        /* Footer styles */
+        footer {
+            background: #f5f5f5;
+            text-align: center;
+            padding: 10px;
+        }
+        section img[src="g3597.png"],
+        section img[src="piscf.png"] {
+            width: 35%; /* Make images take up 35% of the section width */
+            height: auto;
+            margin-left: 20px; /* Add some margin to the left for spacing */
+            float: right; /* Float image to the right */
+            margin-top: 40px; /* Add margin to the top to move images down */
+}
+        section img[src="bootstrap_pic.png"] {
+            width: 35%; /* Make images take up 35% of the section width */
+            height: auto;
+            margin-left: 20px; /* Add some margin to the left for spacing */
+            float: right; /* Float image to the right */
+            margin-top: 90px; /* Add margin to the top to move images down */
+}
     </style>
 </head>
+<body>
+    <header>
+        <img src="logo.png" alt="The Van Voorhis Group">
+        <div>
+            <h1>The Van Voorhis Group</h1>
+            <p>Method Development and Applications for Electronic Structure Theory</p>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="members.html">Group Members</a></li>
+            <li><a href="publications.html">Publications</a></li>
+        </ul>
+    </nav>
 <body>
     <h1>Van Voorhis Group Members</h1>
 
