@@ -99,27 +99,38 @@
             text-align: center;
             padding: 10px;
         }
-        section {
+
+        .former-members {
             display: flex;
-            overflow-x: auto; /* Enable horizontal scrolling if needed */
-            gap: 15px; /* Adjust as needed for spacing between members */
+            flex-wrap: wrap;
+            gap: 20px; /* Adjust as needed for space between members */
+        }
+
+        .former-members h3 {
+            width: 100%; /* Ensure headings take full width of the container */
+            text-align: left; /* Adjust alignment as needed */
+            margin-bottom: 10px; /* Add spacing below each heading */
         }
 
         .member {
-            flex: 0 1 300px; /* Allows members to wrap and adjust width */
-            padding: 0 0;
+            flex: 1 1 calc(33.33% - 20px); /* Three columns with a gap of 20px */
+            padding: 15px;
             border: 1px solid #ccc;
             box-sizing: border-box;
         }
-        section.former-members {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-        }
-        .former-members .column {
-    flex: 1 1 calc(25% - 20px); /* Adjust the column width and spacing */
-    box-sizing: border-box;
-        }
+
+        @media (max-width: 1200px) {
+            .member {
+                flex: 1 1 calc(50% - 20px); /* Two columns on medium screens */
+    }
+}
+
+        @media (max-width: 768px) {
+            .member {
+                flex: 1 1 calc(100% - 20px); /* One column on smaller screens */
+    }
+}
+
     </style>
 </head>
 <body>
@@ -303,7 +314,7 @@
 <section>
     <h2>Former Members</h2>
     <!-- Post Docs subsection -->
-    <div class="column">
+    <div class="former-members">
         <h3>Post Docs</h3>
         <div class="member">
             <div class="name">Matthias Kick</div>
@@ -368,7 +379,7 @@
             <div class="position">EM Portfolio Manager, Bracebridge Capital</div>
         </div>
     <!-- Graduate Students subsection -->
-        <div class="column">
+        <div class="former-members">
     <h3>Graduate Students</h3>
     <div class="member">
         <div class="name">Henry Tran</div>
@@ -462,7 +473,7 @@
     </div>
 </div>
     <!-- Visiting Scientists subsection -->
-    <div class="column">
+    <div class="former-members">
         <h3>Visiting Scientists</h3>
         <!-- List former Visiting Scientists -->
         <div class="member">
@@ -471,7 +482,7 @@
         </div>
     </div>
     <!-- Undergraduate Students subsection -->
-    <div class="column">
+    <div class="former members">
         <h3>Undergraduate Students</h3>
         <!-- List former Undergraduate Students -->
         <div class="member">
