@@ -111,7 +111,15 @@
             border: 1px solid #ccc;
             box-sizing: border-box;
         }
-
+        section.former-members {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+        }
+        .former-members .column {
+    flex: 1 1 calc(25% - 20px); /* Adjust the column width and spacing */
+    box-sizing: border-box;
+        }
     </style>
 </head>
 <body>
@@ -296,7 +304,7 @@
 <section>
     <h2>Former Members</h2>
     <!-- Post Docs subsection -->
-    <div class="subsection">
+    <div class="column">
         <h3>Post Docs</h3>
         <div class="member">
             <div class="name">Matthias Kick</div>
@@ -361,7 +369,7 @@
             <div class="position">EM Portfolio Manager, Bracebridge Capital</div>
         </div>
     <!-- Graduate Students subsection -->
-        <div class="subsection">
+        <div class="column">
     <h3>Graduate Students</h3>
     <div class="member">
         <div class="name">Henry Tran</div>
@@ -455,7 +463,7 @@
     </div>
 </div>
     <!-- Visiting Scientists subsection -->
-    <div class="subsection">
+    <div class="column">
         <h3>Visiting Scientists</h3>
         <!-- List former Visiting Scientists -->
         <div class="member">
@@ -464,7 +472,7 @@
         </div>
     </div>
     <!-- Undergraduate Students subsection -->
-    <div class="subsection">
+    <div class="column">
         <h3>Undergraduate Students</h3>
         <!-- List former Undergraduate Students -->
         <div class="member">
