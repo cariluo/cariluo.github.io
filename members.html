@@ -65,21 +65,22 @@
         nav ul li a:hover {
             background: #ff6347; /* Optional: change background color on hover */
         }
-        /* Section styles */
+/* Section styles */
         section {
             display: flex;
-            align-items: flex-start; /* Align content at the top */
-            justify-content: flex-start; /* Align content to the left */
-            margin-bottom: 40px; /* Add margin between sections */
-            padding-left: 20px; /* Add padding to the left margin */
+            flex-wrap: wrap; /* Allows wrapping for responsive design */
+            align-items: flex-start;
+            justify-content: flex-start;
+            margin-bottom: 40px;
+            gap: 15px; /* Adjust as needed for spacing between members */
         }
         section .content {
-            flex: 1; /* Allow content to grow */
+            flex: 1;
         }
         section img {
-            width: 150px; /* Set all images in sections to a width of 150px */
+            width: 150px;
             height: auto;
-            margin-left: 20px; /* Add some margin to the left for spacing */
+            margin-left: 20px;
         }
         /* Caption styles */
         .caption {
@@ -105,12 +106,11 @@
         }
 
         .member {
-            flex: 0 0 auto;
-            width: 400px; /* Adjust the width as needed */
+            flex: 0 1 300px; /* Allows members to wrap and adjust width */
             padding: 15px;
-            border: 1px solid #ccc; /* Optional: Add border for visual separation */
-            box-sizing: border-box; /* Ensure padding is included in the width */
-         }
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
 
     </style>
 </head>
