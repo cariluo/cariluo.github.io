@@ -119,18 +119,42 @@
             box-sizing: border-box;
         }
 
+/* Media query for screens with a maximum width of 1200px */
         @media (max-width: 1200px) {
             .member {
-                flex: 1 1 calc(50% - 20px); /* Two columns on medium screens */
-    }
-}
+                flex: 1 1 calc(50% - 20px); 
+        /* 
+           flex: 1 1 calc(50% - 20px); 
+           - flex-grow: 1 (allows the item to grow)
+           - flex-shrink: 1 (allows the item to shrink)
+           - flex-basis: calc(50% - 20px) (base size before growing/shrinking)
+           
+           calc(50% - 20px):
+           - 50%: Each .member element will take up half the container's width.
+           - - 20px: Subtract 20 pixels to account for padding/margin/gap between elements.
+           This results in a two-column layout with a 20px gap between columns.
+        */
+                    }
+        }
 
+/* Media query for screens with a maximum width of 768px */
         @media (max-width: 768px) {
             .member {
-                flex: 1 1 calc(100% - 20px); /* One column on smaller screens */
-    }
-}
-
+                flex: 1 1 calc(100% - 20px);
+        /* 
+           flex: 1 1 calc(100% - 20px);
+           - flex-grow: 1 (allows the item to grow)
+           - flex-shrink: 1 (allows the item to shrink)
+           - flex-basis: calc(100% - 20px) (base size before growing/shrinking)
+           
+           calc(100% - 20px):
+           - 100%: Each .member element will take up the full width of the container.
+           - - 20px: Subtract 20 pixels to account for padding/margin/gap around the element.
+           This results in a single-column layout with a 20px gap on the sides.
+        */
+                    }
+        }
+        
     </style>
 </head>
 <body>
